@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <h2 [ngStyle]="{
+      color: couleur,
+      fontSize: Tpolice+'px',
+      fontFamily: FontText
+    }">Exercice NgStyle</h2>
+    <div class="col-12">
+
+      <input type="color" name="textForm" class="form-control" [(ngModel)]="couleur">
+      <input type="number" name="NumForm" class="form-control" [(ngModel)]="Tpolice">
+      <select class="form-control" [(ngModel)]="FontText">
+        <option value="fantasy">Fantasy</option>
+        <option value="Helvetica">Helvetica</option>
+        <option value="arial">Arial</option>
+      </select>
+
+    </div>
+  </div>
+</div>
